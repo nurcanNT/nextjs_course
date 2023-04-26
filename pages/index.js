@@ -2,10 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import {useRouter} from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({users}) {
+  const router = useRouter();
   console.log(users);
   const number = 3;
   return (
@@ -27,7 +29,7 @@ export default function Home({users}) {
       </style>
       <h2>User List</h2>
       {users.map((user)=>(
-        <h4 key={user.id} style={{color:"purple"}}><span style={{color: "red", fontWeight: 700}}>{user.id}</span>-{user.name}</h4>
+        <h4 key={user.id} onClick={()=>{router.push(`user/${user.id}`)}} style={{color:"purple", cursor:"pointer"}}><span style={{color: "red", fontWeight: 700}}>{user.id}</span>-{user.name}</h4>
       ))}
     </div>
   )
