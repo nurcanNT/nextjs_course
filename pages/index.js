@@ -18,6 +18,13 @@ export default function Home({users}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <div style={{
+        position: "relative",
+      }}>
+        <Image src="https://cdn1.ntv.com.tr/gorsel/KMOzyysRhUmdQ043Hkcqcg.jpg?width=1000&mode=crop&scale=both" width={300} height={300} alt="" />
+      </div>
+     
       <h1 className='title'>Home</h1>
       <style jsx>
         {`
