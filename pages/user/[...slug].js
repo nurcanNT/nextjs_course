@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import {useRouter} from "next/router";
 
 const UserItem = ({userData}) => {
+  const router = useRouter();
+  console.log(router);
+
     // const [user, setUser] = useState();
     // const router = useRouter();
 
@@ -32,13 +35,13 @@ const UserItem = ({userData}) => {
 
 export default UserItem;
 
-export const getServerSideProps = async (context) => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/users/${context.params.id}`);
-    const userData = await res.json();
-    console.log(context);
-    return{
-        props:{
-            userData,
-        }
-    }
-}
+// export const getServerSideProps = async (context) => {
+//     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${context.params.id}`);
+//     const userData = await res.json();
+//     console.log(context);
+//     return{
+//         props:{
+//             userData,
+//         }
+//     }
+// }
