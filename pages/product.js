@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import React from 'react';
+import Meta from "../components/Meta.js"
 
 
 const product = () => {
   return (
     <div>
-        <Head>
-            <title>Product Page</title>
-        </Head>
+        <Meta title= "Product"/>
       <div>Product</div>
     </div>
   )

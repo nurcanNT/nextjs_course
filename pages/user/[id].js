@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {useRouter} from "next/router";
+import Meta from "@/components/Meta";
 
 const UserItem = ({userData}) => {
   const router = useRouter();
@@ -25,6 +26,8 @@ const UserItem = ({userData}) => {
     // console.log(user);
   return (
     <div className='container'>
+      <Meta title={userData?.name
+      }/>
       <h1>User Item</h1>
       <p>
         <b>Full Name:</b> {userData?.name}
