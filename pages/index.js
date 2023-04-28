@@ -87,7 +87,24 @@ export default function Home({users}) {
       <p className="w-[438px] h-[286px] absolute left-0 top-[262px] text-[35px] text-center text-[#fffcfc]">
         You know wake up the pencil. what are you doing Aya me too
       </p>
-     
+      <svg
+        width={163}
+        height={161}
+        viewBox="0 0 163 161"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        className="absolute left-[132.5px] top-[-5.5px]"
+        preserveAspectRatio="none"
+      >
+       
+        <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width={1} height={1}>
+            
+          </pattern>
+          
+        </defs>
+      </svg>
     </div>
   </div>
 </div>;
