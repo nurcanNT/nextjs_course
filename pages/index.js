@@ -16,17 +16,23 @@ export default function Home({users}) {
       <Meta title="Home"/>
 
       <div
-  className="w-[729px] h-[636px] relative overflow-hidden rounded-[45px]"
-  style={{ background: "linear-gradient(134.69deg, #f60000 -22.05%, #3959ff 98.57%)" }}
+  style={{
+    width: 729,
+    height: 636,
+    position: "relative",
+    overflow: "hidden",
+    borderRadius: 45,
+    background: "linear-gradient(134.69deg, #f60000 -22.05%, #3959ff 98.57%)",
+  }}
 >
-  <div className="w-[552px] h-[578px]">
+  <div style={{ width: 552, height: 578 }}>
     <svg
       width={552}
       height={513}
       viewBox="0 0 552 513"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-[552px] h-[513px] absolute left-[91px] top-[58px]"
+      style={{ width: 552, height: 513, position: "absolute", left: 91, top: 58 }}
       preserveAspectRatio="none"
     >
       <circle cx={65} cy={65} r={65} fill="url(#paint0_linear_5_29)" />
@@ -80,55 +86,40 @@ export default function Home({users}) {
         </lineargradient>
       </defs>
     </svg>
-    <div className="w-[438px] h-[548px] absolute left-[145px] top-[88px]">
-      <p className="w-[266px] h-[67px] absolute left-[86px] top-40 text-[45px] font-bold text-center text-[#fff8f8]">
+    <div style={{ width: 438, height: 548, position: "absolute", left: 145, top: 88 }}>
+      <p
+        style={{
+          width: 266,
+          height: 67,
+          position: "absolute",
+          left: 86,
+          top: 160,
+          fontSize: 45,
+          fontWeight: 700,
+          textAlign: "center",
+          color: "#fff8f8",
+        }}
+      >
         Nuntium Aya
       </p>
-      <p className="w-[438px] h-[286px] absolute left-0 top-[262px] text-[35px] text-center text-[#fffcfc]">
+      <p
+        style={{
+          width: 438,
+          height: 286,
+          position: "absolute",
+          left: 0,
+          top: 262,
+          fontSize: 35,
+          textAlign: "center",
+          color: "#fffcfc",
+        }}
+      >
         You know wake up the pencil. what are you doing Aya me too
       </p>
-      <svg
-        width={163}
-        height={161}
-        viewBox="0 0 163 161"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        className="absolute left-[132.5px] top-[-5.5px]"
-        preserveAspectRatio="none"
-      >
-       
-        <defs>
-          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width={1} height={1}>
-            
-          </pattern>
-          
-        </defs>
-      </svg>
     </div>
   </div>
 </div>;
-      
-      <div style={{
-        position: "relative",
-      }}>
-        <Image src="https://cdn1.ntv.com.tr/gorsel/KMOzyysRhUmdQ043Hkcqcg.jpg?width=1000&mode=crop&scale=both" width={300} height={300} alt="" />
       </div>
-     
-      <h1 className='title'>Home</h1>
-      <style jsx>
-        {`
-        .title{
-          display: ${number > 2 ? "block" : "none"}; {/*write js code inside css code !!!*/}
-          color:blue;
-        }
-        `}
-      </style>
-      <h2>User List</h2>
-      {users.map((user)=>(
-        <h4 key={user.id} onClick={()=>{router.push(`user/${user.id}`)}} style={{color:"purple", cursor:"pointer"}}><span style={{color: "red", fontWeight: 700}}>{user.id}</span>-{user.name}</h4>
-      ))}
-    </div>
   )
 }
 
