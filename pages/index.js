@@ -4,6 +4,7 @@ import headerStyle from '../styles/Header.module.css'
 import Meta from "../components/Meta.js";
 import Navbar from '@/components/Pages/Home/Navbar.js'
 import Slider from '@/components/Pages/Home/Slider.js'
+import Editor from '@/components/Pages/Home/Editor';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,6 +18,7 @@ export default function Home({users}) {
       <Meta title="Home"/>
     <Navbar/>
     <Slider/>
+    <Editor/>
       </div>
   )
 }

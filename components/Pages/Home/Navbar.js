@@ -9,7 +9,7 @@ const Navbar = () => {
     <div style={{
         position: 'relative',
         overflow: 'hidden',}}>
-      <div style={{ width: 1316, height: 57 }}>
+      <div style={{ width: 1356, height: 77 }}>
   <div style={{ width: 186, height: 46 }}>
     <div style={{ width: 135, height: 46 }}>
       <div

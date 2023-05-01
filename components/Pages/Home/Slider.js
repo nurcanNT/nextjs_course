@@ -2,7 +2,8 @@ import React from 'react'
 
 const Slider = () => {
   return (
-    <div>
+    <div style={{position: 'relative',
+    overflow: 'hidden',}}>
       <div style={{ width: 1316, height: 592 }}>
   <img
     style={{ width: 1316, height: 592, position: "absolute", left: "24.5px", top: "130.5px" }}

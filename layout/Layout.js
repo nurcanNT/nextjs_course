@@ -8,7 +8,7 @@ const Layout = ({children}) => {
   return (
     <React.Fragment>
       <Meta/>
-      <Home/>
+     
       {children}
       <Footer/>
     </React.Fragment>

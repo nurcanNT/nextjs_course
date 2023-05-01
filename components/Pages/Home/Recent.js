@@ -2,7 +2,7 @@ import React from 'react'
 
 const Recent = () => {
   return (
-    <div>
+    <div style={{position: 'relative',}}>
       <div style={{ width: 1122, height: 975 }}>
   <div style={{ width: 812, height: 906 }}>
     <div style={{ width: 812, height: 177 }}>

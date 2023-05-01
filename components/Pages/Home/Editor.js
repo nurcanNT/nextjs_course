@@ -2,7 +2,8 @@ import React from 'react'
 
 const Editor = () => {
   return (
-    <div>
+    <div style={{position: 'relative',
+    overflow: 'hidden',}}>
       <div style={{ width: 858, height: 1160 }}>
   <div style={{ width: 856, height: 311 }}>
     <div style={{ width: 430, height: 311 }}>
