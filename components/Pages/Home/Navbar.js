@@ -1,13 +1,14 @@
 import React from 'react'
 import Link from 'next/link';
-import headerStyle from '../styles/Header.module.css'
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
     const router = useRouter();
     console.log(router);
   return (
-    <div>
+    <div style={{
+        position: 'relative',
+        overflow: 'hidden',}}>
       <div style={{ width: 1316, height: 57 }}>
   <div style={{ width: 186, height: 46 }}>
     <div style={{ width: 135, height: 46 }}>
@@ -33,6 +34,7 @@ const Navbar = () => {
           fontSize: 20,
           textAlign: "center",
           color: "#1c1c1c",
+          cursor: 'pointer',
         }}
       >
         Login
@@ -44,7 +46,7 @@ const Navbar = () => {
       viewBox="0 0 30 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ width: 30, height: 30, position: "absolute", left: 1155, top: 43 }}
+      style={{ width: 30, height: 30, position: "absolute", left: 1155, top: 43,  cursor: 'pointer', }}
       preserveAspectRatio="xMidYMid meet"
     >
       <path
@@ -64,9 +66,7 @@ const Navbar = () => {
     </svg>
   </div>
   <div style={{ width: 465, height: 57 }}>
-    <ul>
-  <Link href="/home"><li>
-  <p
+    <p onClick={() => router.push('/')}
       style={{
         width: 69,
         height: 20,
@@ -77,14 +77,12 @@ const Navbar = () => {
         fontWeight: 700,
         textAlign: "left",
         color: "#000",
+        cursor: 'pointer',
       }}
     >
       Home
     </p>
-    </li></Link>
-   
-    <Link href="/tag"><li>
-    <p
+    <p onClick={() => router.push('/tags')}
       style={{
         width: 53,
         height: 20,
@@ -94,15 +92,13 @@ const Navbar = () => {
         fontSize: 20,
         textAlign: "left",
         color: "#000",
+        cursor: 'pointer',
       }}
     >
       {" "}
       Tags
     </p>
-        </li></Link>
-    
-    <Link href="/about"><li>
-    <p
+    <p onClick={() => router.push('/about')}
       style={{
         width: 72,
         height: 20,
@@ -112,14 +108,13 @@ const Navbar = () => {
         fontSize: 20,
         textAlign: "left",
         color: "#000",
+        cursor: 'pointer',
       }}
     >
       About
     </p>
-    </li></Link>
-    </ul>
     <div style={{ width: 178, height: 57 }}>
-      <p
+      <p onClick={() => router.push('/')}
         style={{
           width: 162,
           height: 31,
@@ -130,6 +125,7 @@ const Navbar = () => {
           fontWeight: 700,
           textAlign: "left",
           color: "#1c1c1c",
+          cursor: 'pointer',
         }}
       >
         nuntium.
@@ -144,7 +140,7 @@ const Navbar = () => {
           background: "#1c1c1c",
         }}
       />
-      <p
+      <p onClick={() => router.push('/')}
         style={{
           width: 162,
           height: 31,
@@ -155,13 +151,15 @@ const Navbar = () => {
           fontWeight: 700,
           textAlign: "left",
           color: "#fff",
+          cursor: 'pointer',
         }}
       >
         nu
       </p>
     </div>
   </div>
-</div>;
+</div>
+
     </div>
   )
 }
