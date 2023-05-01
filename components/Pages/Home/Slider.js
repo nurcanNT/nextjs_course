@@ -4,7 +4,7 @@ const Slider = () => {
   return (
     <div style={{position: 'relative',
     overflow: 'hidden',}}>
-      <div style={{ width: 1316, height: 592 }}>
+      <div style={{ width: 1316, height: 792 }}>
   <img
     style={{ width: 1316, height: 592, position: "absolute", left: "24.5px", top: "130.5px" }}
     src="article-image.png"
