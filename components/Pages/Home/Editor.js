@@ -4,7 +4,7 @@ const Editor = () => {
   return (
     <div style={{position: 'relative',
     overflow: 'hidden',}}>
-      <div style={{ width: 858, height: 1960,  }}>
+     
   <div style={{ width: 856, height: 311 }}>
     <div style={{ width: 430, height: 311 }}>
       <p
@@ -379,7 +379,7 @@ const Editor = () => {
       <line y1="2.5" x2={190} y2="2.5" stroke="#1C1C1C" stroke-width={5} />
     </svg>
   </div>
-</div>
+
     </div>
   )
 }
