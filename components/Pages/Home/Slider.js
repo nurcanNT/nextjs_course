@@ -32,10 +32,7 @@ const Slider = () => {
         color: "#000",
       }}
     >
-      Proident aliquip velit qui commodo officia qui consectetur dolor ullamco aliquip elit
-      incididunt. Ea minim ex consectetur excepteur. Ex laborum nostrud mollit sint consectetur
-      Lorem amet aliqua do enim. Commodo duis dolor anim excepteur. In aliquip mollit nulla
-      consequat velit magna.
+      Proident 
     </p>
     <div style={{ width: 332, height: 22 }}>
       <p
@@ -95,7 +92,7 @@ const Slider = () => {
           color: "rgba(28,28,28,0.5)",
         }}
       >
-        Ralph Hawkins
+        Ralph 
       </p>
     </div>
     <p
